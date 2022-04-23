@@ -16,18 +16,18 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/users")
-    public List<User> index() {
+    public List<User> getAll() {
         return userService.findAll();
     }
 
     @GetMapping("/users/id/{id}")
-    public User show(@PathVariable Long id) {
+    public User getById(@PathVariable Long id) {
         return this.userService.findById(id);
     }
 
-    @GetMapping("/users/name/{nameUser}")
-    public User show(@PathVariable String nameUser) {
-        return this.userService.findByName(nameUser);
+    @GetMapping("/users/name/{name}")
+    public User getByName(@PathVariable String name) {
+        return this.userService.findByName(name);
     }
 
     @PostMapping("/users")
@@ -41,8 +41,8 @@ public class UserController {
     @ResponseStatus(HttpStatus.CREATED)
     public User update(@ModelAttribute User user, @PathVariable Long id) {
         User currentUser = this.userService.findById(id);
-        currentUser.setNameUser(user.getNameUser());
-        currentUser.setPasswordUser(user.getPasswordUser());
+        currentUser.setName(user.getName());
+        currentUser.setPassword(user.getPassword());
         this.userService.save(currentUser);
         return currentUser;
     }
