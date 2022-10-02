@@ -15,6 +15,9 @@ public class Account {
     private AccountRoles role;
     private Integer money;
 
+    public Account() {
+    }
+
     public Account(Integer id, String email, String name, String password, LocalDate birthDay, AccountRoles role, Integer money) {
         this.id = id;
         this.email = email;
