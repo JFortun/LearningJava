@@ -1,9 +1,13 @@
 package org.fortun;
 
-import org.fortun.stream.Stream;
+import org.fortun.streams.Streams;
 
 public class App {
+
     public static void main(String[] args) {
-        Stream.run();
+
+        var streams = new Streams();
+
+        streams.run();
     }
 }
