@@ -1,7 +1,9 @@
 package org.fortun;
 
+import org.fortun.stream.Stream;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Stream.run();
     }
 }
