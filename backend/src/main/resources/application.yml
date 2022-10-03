@@ -1,0 +1,10 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: 'Backend'
+server:
+  port: 8080
+logging:
+  pattern:
+    dateformat: hh:mm:ss
