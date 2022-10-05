@@ -3,6 +3,9 @@ spring:
     banner-mode: off
   application:
     name: 'Backend'
+  output:
+    ansi:
+      enabled: always
 server:
   port: 8080
 logging:
