@@ -1,17 +1,20 @@
 openapi: 3.0.3
+
 info:
   version: 1.0.0
   title: Backend API
   description: Description
+
 servers:
-  - url: http://api.backend.com/
+  - url: https://api.backend.com/
     description: Server description
+
 paths:
   /accounts:
     get:
       tags:
         - Accounts
-      operationId: getAccounts
+      operationId: getAllAccounts
       description: Returns a list of accounts
       responses:
         '200':
@@ -21,17 +24,41 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Account'
-
+                  $ref: '#/components/schemas/AccountODTO'
         '400':
           description: Invalid request
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
+    post:
+      tags:
+        - Accounts
+      operationId: createAccount
+      description: Creates a new account
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/createAccountIDTO'
+      responses:
+        '200':
+          description: Successfully created a new artist
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountODTO'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
 components:
   schemas:
-    Account:
+    AccountODTO:
       type: object
       required:
         - id
@@ -45,7 +72,7 @@ components:
         id:
           type: integer
         role:
-          type: string
+          $ref: '#/components/schemas/RoleDTO'
         email:
           type: string
         name:
@@ -54,11 +81,37 @@ components:
           type: string
         birthday:
           type: string
+          format: date
         capital:
           type: integer
+    createAccountIDTO:
+      type: object
+      required:
+        - role
+        - email
+        - name
+        - password
+        - birthday
+        - capital
+      properties:
+        role:
+          $ref: '#/components/schemas/RoleDTO'
+        email:
+          type: string
+        name:
+          type: string
+        password:
+          type: string
+        birthday:
+          type: string
+          format: date
+        capital:
+          type: integer
+    RoleDTO:
+      type: string
+      enum: [ admin, user, guest ]
     Error:
       type: object
       properties:
         message:
           type: string
-
