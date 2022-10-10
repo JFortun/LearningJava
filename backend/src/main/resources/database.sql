@@ -13,13 +13,13 @@ CREATE SCHEMA IF NOT EXISTS schema
 
 CREATE TABLE IF NOT EXISTS schema.account
 (
-    id       integer NOT NULL DEFAULT nextval('schema.account_id_seq'::regclass),
+    id       uuid NOT NULL,
     role     character varying(50) COLLATE pg_catalog."default",
     email    character varying(50) COLLATE pg_catalog."default",
-    name     character varying COLLATE pg_catalog."default",
-    password character varying COLLATE pg_catalog."default",
+    name     character varying(50) COLLATE pg_catalog."default",
+    password character varying(50) COLLATE pg_catalog."default",
     birthday date,
-    money    money,
+    capital  money,
     CONSTRAINT account_pkey PRIMARY KEY (id)
 )
     TABLESPACE pg_default;
