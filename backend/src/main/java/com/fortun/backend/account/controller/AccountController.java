@@ -7,8 +7,6 @@ import com.fortun.backend.openapi.model.CreateAccountIDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collections;
@@ -25,7 +23,6 @@ public class AccountController implements AccountsApi {
 
     private final static Logger LOGGER = Logger.getLogger(AccountController.class.getSimpleName());
 
-    @GetMapping("/account/all")
     @Override
     public ResponseEntity<List<AccountODTO>> getAllAccounts() {
         var response = new ResponseEntity(Collections.singletonList(accountService.getAllAccounts()), HttpStatus.OK);
@@ -33,7 +30,6 @@ public class AccountController implements AccountsApi {
         return response;
     }
 
-    @PostMapping("/account/create")
     @Override
     public ResponseEntity<AccountODTO> createAccount(CreateAccountIDTO createAccountIDTO) {
         var accountModel = accountService.createAccount(createAccountIDTO);

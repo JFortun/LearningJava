@@ -6,8 +6,8 @@ info:
   description: Description
 
 servers:
-  - url: https://api.backend.com/
-    description: Server description
+  - url: http://localhost:8080/
+    description: Local development server
 
 paths:
   /accounts:
@@ -44,7 +44,7 @@ paths:
               $ref: '#/components/schemas/createAccountIDTO'
       responses:
         '200':
-          description: Successfully created a new artist
+          description: Successfully created a new account
           content:
             application/json:
               schema:
