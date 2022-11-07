@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS schema.account
     name     character varying(50) COLLATE pg_catalog."default",
     password character varying(50) COLLATE pg_catalog."default",
     birthday date,
-    capital  money,
+    capital  integer,
     CONSTRAINT account_pkey PRIMARY KEY (id)
 )
     TABLESPACE pg_default;
