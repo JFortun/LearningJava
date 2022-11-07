@@ -3,11 +3,26 @@ openapi: 3.0.3
 info:
   version: 1.0.0
   title: Backend API
-  description: Description
+  description: Backend API to interact with accounts data
+  contact:
+    name: JFortun
+    url: https://github.com/JFortun
+    email: josemanuelfortunromero@gmail.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
 
 servers:
-  - url: http://localhost:8080/
+  - url: http://{domain}:{port}
     description: Local development server
+    variables:
+      domain:
+        default: 'localhost'
+      port:
+        enum:
+          - '8080'
+          - '80'
+        default: '8080'
 
 paths:
   /accounts:
@@ -42,6 +57,15 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/createAccountIDTO'
+            example:
+              summary: Example of an account parameters
+              value:
+                role: user
+                email: user@mail.com
+                name: John
+                password: john123
+                birthday: 2022-01-01
+                capital: 10050
       responses:
         '200':
           description: Successfully created a new account
