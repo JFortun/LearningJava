@@ -4,7 +4,6 @@ import com.fortun.backend.account.service.AccountService;
 import com.fortun.backend.openapi.api.AccountsApi;
 import com.fortun.backend.openapi.model.AccountODTO;
 import com.fortun.backend.openapi.model.CreateAccountIDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,8 +17,11 @@ import java.util.logging.Logger;
 @RestController
 public class AccountController implements AccountsApi {
 
-    @Autowired
-    AccountService accountService;
+    private final AccountService accountService;
+
+    public AccountController(final AccountService accountService) {
+        this.accountService = accountService;
+    }
 
     private final static Logger LOGGER = Logger.getLogger(AccountController.class.getSimpleName());
 

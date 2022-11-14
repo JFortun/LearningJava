@@ -5,7 +5,6 @@ import com.fortun.backend.account.model.Account;
 import com.fortun.backend.account.repository.AccountRepository;
 import com.fortun.backend.account.service.AccountService;
 import com.fortun.backend.openapi.model.CreateAccountIDTO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,8 +12,11 @@ import java.util.List;
 @Service
 public class AccountServiceImpl implements AccountService {
 
-    @Autowired
-    AccountRepository accountRepository;
+    private final AccountRepository accountRepository;
+
+    public AccountServiceImpl(final AccountRepository accountRepository) {
+        this.accountRepository = accountRepository;
+    }
 
     @Override
     public List<Account> getAllAccounts() {
