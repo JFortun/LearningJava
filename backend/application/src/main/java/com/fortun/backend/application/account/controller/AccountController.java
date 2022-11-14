@@ -1,6 +1,6 @@
-package com.fortun.backend.account.controller;
+package com.fortun.backend.application.account.controller;
 
-import com.fortun.backend.account.service.AccountService;
+import com.fortun.backend.application.account.service.AccountService;
 import com.fortun.backend.openapi.api.AccountsApi;
 import com.fortun.backend.openapi.model.AccountODTO;
 import com.fortun.backend.openapi.model.CreateAccountIDTO;
@@ -8,7 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.logging.Level;

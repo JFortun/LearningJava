@@ -1,7 +1,7 @@
-package com.fortun.backend.account.mapper;
+package com.fortun.backend.application.account.mapper;
 
-import com.fortun.backend.account.model.Account;
-import com.fortun.backend.account.model.Role;
+import com.fortun.backend.application.account.model.Account;
+import com.fortun.backend.application.account.model.Role;
 import com.fortun.backend.openapi.model.CreateAccountIDTO;
 import com.fortun.backend.openapi.model.RoleDTO;
 

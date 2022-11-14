@@ -1,4 +1,4 @@
-package com.fortun.backend.account.model;
+package com.fortun.backend.application.account.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

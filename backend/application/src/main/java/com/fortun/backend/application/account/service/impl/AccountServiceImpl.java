@@ -1,9 +1,9 @@
-package com.fortun.backend.account.service.impl;
+package com.fortun.backend.application.account.service.impl;
 
-import com.fortun.backend.account.mapper.AccountMapper;
-import com.fortun.backend.account.model.Account;
-import com.fortun.backend.account.repository.AccountRepository;
-import com.fortun.backend.account.service.AccountService;
+import com.fortun.backend.application.account.mapper.AccountMapper;
+import com.fortun.backend.application.account.model.Account;
+import com.fortun.backend.application.account.repository.AccountRepository;
+import com.fortun.backend.application.account.service.AccountService;
 import com.fortun.backend.openapi.model.CreateAccountIDTO;
 import org.springframework.stereotype.Service;
 
