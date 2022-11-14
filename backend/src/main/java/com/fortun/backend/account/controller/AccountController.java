@@ -27,7 +27,7 @@ public class AccountController implements AccountsApi {
 
     @Override
     public ResponseEntity<List<AccountODTO>> getAllAccounts() {
-        var response = new ResponseEntity(Collections.singletonList(accountService.getAllAccounts()), HttpStatus.OK);
+        var response = new ResponseEntity(accountService.getAllAccounts(), HttpStatus.OK);
         LOGGER.log(Level.INFO, String.format("The response of accountsGet is %s", Objects.requireNonNull(response.getBody())));
         return response;
     }
