@@ -1,0 +1,25 @@
+class Leap {
+
+    boolean isLeapYear(int year) {
+        final var divisibleBy4 = this.isDivisibleBy4(year);
+        final var divisibleBy100 = this.isDivisibleBy100(year);
+        final var divisibleBy400 = this.isDivisibleBy400(year);
+        if (divisibleBy4) {
+            return divisibleBy100 ? divisibleBy400 : true;
+        }
+        return false;
+    }
+
+    boolean isDivisibleBy4(final int year) {
+        return (year % 4) == 0;
+    }
+
+    boolean isDivisibleBy100(final int year) {
+        return (year % 100) == 0;
+    }
+
+    boolean isDivisibleBy400(final int year) {
+        return (year % 400) == 0;
+    }
+
+}
