@@ -1,0 +1,48 @@
+07-Mar-2026 16:48:55.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.18
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2026 10:22:57 UTC
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.18.0
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.3.1
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Users/josefortun/.sdkman/candidates/java/25.0.2-tem
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18
+07-Mar-2026 16:48:55.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/conf/logging.properties
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+07-Mar-2026 16:48:55.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18
+07-Mar-2026 16:48:55.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18
+07-Mar-2026 16:48:55.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/temp
+07-Mar-2026 16:48:55.220 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/josefortun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+07-Mar-2026 16:48:55.329 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Mar-2026 16:48:55.341 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [209] milliseconds
+07-Mar-2026 16:48:55.355 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Mar-2026 16:48:55.355 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.18]
+07-Mar-2026 16:48:55.363 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/hello.war]
+07-Mar-2026 16:48:55.474 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/hello.war] has finished in [110] ms
+07-Mar-2026 16:48:55.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/docs]
+07-Mar-2026 16:48:55.488 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/docs] has finished in [13] ms
+07-Mar-2026 16:48:55.488 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/manager]
+07-Mar-2026 16:48:55.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/manager] has finished in [17] ms
+07-Mar-2026 16:48:55.506 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/examples]
+07-Mar-2026 16:48:55.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/examples] has finished in [152] ms
+07-Mar-2026 16:48:55.658 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/ROOT]
+07-Mar-2026 16:48:55.666 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/ROOT] has finished in [8] ms
+07-Mar-2026 16:48:55.666 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/host-manager]
+07-Mar-2026 16:48:55.678 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/josefortun/Development/Personal/LearningJava/jakarta/apache-tomcat-11.0.18/webapps/host-manager] has finished in [11] ms
+07-Mar-2026 16:48:55.679 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Mar-2026 16:48:55.683 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [341] milliseconds
+07-Mar-2026 16:51:17.615 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Mar-2026 16:51:17.622 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Mar-2026 16:51:17.633 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Mar-2026 16:51:17.647 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
